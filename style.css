@@ -15,7 +15,8 @@ body{
 }
 .imbg{
     background-image: url(images/Gal.jpg) ;
-    height:500px;
+    background-size:contain;
+    height: 200px;
 }
 .logo{
     position: absolute;
@@ -29,15 +30,15 @@ body{
 .boxitem-grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    align-items: center;
     text-align: center;
     justify-items: center;
     margin: auto;
     width:50%;
+    column-gap: 5%;
 }
 
 .boxitem{
-    background-color: bisque;
+
     padding:10px;
     border-radius: 15px;
     color: black;
@@ -46,12 +47,7 @@ body{
 #team .boxitem{
     height:150px;
     width: 150px;
-}
-#distinct .boxitem{
-    width: 350px;
-}
-#user .boxitem{
-    width: 200px;
+    background-color: bisque;
 }
 
 .boxitem img{
@@ -62,7 +58,7 @@ body{
     color: black;
 }
 
-p,li,h2,h3{
+p,li,h1,h2,h3{
     font-family: roboto;
     color:white;
     margin-left:15px;
